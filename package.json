@@ -1,12 +1,12 @@
 {
-    "name": "revealfileinfolder",
-    "displayName": "Reveal File In Folder",
-    "description": "Quickly reveal file in folder/finder/explorer",
-    "version": "0.0.3",
-    "publisher": "Molunerfinn",
+    "name": "revealfileinexplorer",
+    "displayName": "Reveal File In Explorer",
+    "description": "Quickly reveal file in sidebar explorer",
+    "version": "0.0.1",
+    "publisher": "Nat!",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Molunerfinn/VSCode-RevealFileinFolder.git"
+        "url": "https://github.com/mulle-nat/VSCode-RevealFileInExplorer.git"
     },
     "engines": {
         "vscode": "^1.23.0"
@@ -15,14 +15,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.revealFileInFolder"
+        "onCommand:extension.revealFileInExplorer"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.revealFileInFolder",
-                "title": "Reveal in folder",
+                "command": "extension.revealFileInExplorer",
+                "title": "Reveal in explorer",
                 "icon": {
                     "dark": "./icons/reveal.png",
                     "light": "./icons/reveal_light.png"
@@ -32,14 +32,14 @@
         "menus": {
             "editor/context": [
                 {
-                    "command": "extension.revealFileInFolder",
+                    "command": "extension.revealFileInExplorer",
                     "when": "editorFocus && resourceScheme != 'untitled'",
                     "group": "navigation"
                 }
             ],
             "editor/title": [
                 {
-                    "command": "extension.revealFileInFolder",
+                    "command": "extension.revealFileInExplorer",
                     "group": "navigation",
                     "when": "editorIsOpen && resourceScheme != 'untitled' && resourceScheme != 'walkThrough'"
                 }
